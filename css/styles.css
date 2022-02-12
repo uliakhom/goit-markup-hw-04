@@ -255,9 +255,9 @@ img {
   background-color: var(--team-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
-}
-.features-icon {
-  margin: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-item {
@@ -409,8 +409,7 @@ img {
 }
 
 .clients-link {
-  padding: 16px 32px;
-  min-width: calc((100% - 150px) / 6);
+  min-width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -423,6 +422,10 @@ img {
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
 }
 
